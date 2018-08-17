@@ -1,15 +1,11 @@
 package COM.appium.AndroidAutomation;
 
-import java.io.File;
-import java.net.MalformedURLException;
 import java.net.Socket;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import io.appium.java_client.MobileDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
@@ -19,6 +15,7 @@ public class AndroidDriverManager extends Base {
 	
 
 	
+	@SuppressWarnings("rawtypes")
 	public static void getAndroidDriver() 
 	{
         try {
