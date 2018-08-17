@@ -1,0 +1,24 @@
+
+  appium-android:
+    image: rgonalo/appium
+    privileged: true
+    container_name: appium
+    volumes:
+      - /dev/bus/usb:/dev/bus/usb
+      - ./src/main/App/demo.apk:/src/main/App/demo.apk
+      - ~/.android:/root/.android
+    ports:
+      - 4723:4723
+
+
+
+  java-maven:
+    image: iamranit/appium-maven-docker:0.0.5
+    container_name: appiumdockertest
+    volumes:
+     - /Users/ranit/Downloads/Result:/test-output/
+
+    command: mvn test
+    links:
+    - appium-android:localhost
+
