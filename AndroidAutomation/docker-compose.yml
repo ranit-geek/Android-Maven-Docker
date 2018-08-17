@@ -5,7 +5,7 @@
     container_name: appium
     volumes:
       - /dev/bus/usb:/dev/bus/usb
-      - ./src/main/App/demo.apk:/src/main/App/demo.apk
+      - ./app/demo.apk:/app/demo.apk
       - ~/.android:/root/.android
     ports:
       - 4723:4723

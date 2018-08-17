@@ -6,7 +6,7 @@ public class Base {
 	@SuppressWarnings("rawtypes")
 	protected static AndroidDriver driver;
 	
-	protected static String appPath= System.getProperty("user.dir")+"/src/main/App/demo.apk";
+	protected static String appPath= System.getProperty("user.dir")+"/app/demo.apk";
 	protected static int portappium=4723;
 	protected static String appiumurl= "http://localhost:4723/wd/hub";
 

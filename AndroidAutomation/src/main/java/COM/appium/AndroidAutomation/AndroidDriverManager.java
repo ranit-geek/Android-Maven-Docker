@@ -45,7 +45,7 @@ public class AndroidDriverManager extends Base {
 	public static void quitAndroidDriver()
 	{
 	
-		driver.quit();;
+		driver.quit();
 		
 	}
 	
